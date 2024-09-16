@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Center the parent container */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light gray background */
+}
+/* #signup{
+  display: flex;
+  height: 25px;
+} */
+
+/* styling for admin button */
+#admin {
+  margin-right: 10px;
+  background-color: #293241;
+  color: #ee9b00;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 1000px;
+  border: 1px solid #ee9b00;
+}
+
+#admin:hover {
+  background-color: #ee9b00;
+  color: #e0e1dd;
+}
+
+/* Styling for the container */
+.container, .container1 {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.menu {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Additional styling for form elements */
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: cadetblue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkcyan; /* Slightly darker shade for hover effect */
+}
+
+.error-message, .error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container, .container1 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.navbar {
+  background-color: #343a40; /* Dark background color */
+  padding: 0.5rem 1rem; /* Reduced padding */
+}
+
+.navbar-brand {
+ margin-left:10rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#edede9; /* Golden color for the brand */
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.navbar-brand:hover{
+  color: red;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar form {
+  display: flex;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.btn-outline-success {
+  background-color: transparent;
+  color: #28a745;
+  border: 1px solid #28a745; /* Add border */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-outline-secondary {
+  background-color: transparent;
+  color: #6c757d;
+  border: 1px solid #6c757d; /* Add border */
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.Frontpage {
+  background-color: #edede9;
+  padding: 2rem;
+}
+
+.card {
+  margin: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #FBF5F3;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  background-color: #fff;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  border-top: 1px solid #ccc;
+}
+
+.blockquote {
+  margin: 1rem 0;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.blockquote-footer {
+  font-size: 1rem;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.blockquote-footer cite {
+  font-style: normal;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .navbar form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+}
+
+/* CSS for Home component cards */
+.row-cols-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col {
+  flex: 1 0 calc(33.3333% - 20px); /* Adjust based on the number of columns you want per row */
+  max-width: calc(33.3333% - 20px); /* Adjust based on the number of columns you want per row */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the entire image is displayed within the container */
+  border-bottom: 1px solid #ccc;
+}
+
+.card-body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Frontpage specific styling */
+.carousel-inner img {
+  width: 100%;
+  height: 400px; /* Set a fixed height to ensure consistency */
+  object-fit: cover; /* Ensures images cover the whole container */
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background to control icons */
+  border-radius: 50%;
+}

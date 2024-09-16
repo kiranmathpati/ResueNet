@@ -1,0 +1,72 @@
+
+.Navbarr {
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0; /* Adjust the padding as needed */
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  color: #f8f9fa;
+  text-align: center;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+h1{
+  color: white;
+}
+#p{
+  border: 1px solid black;
+  background-color: #2b5048;
+  width:200px;
+  border-radius: 9px;
+}
+
+
+
+#fillform {
+  width: 500px; /* Adjust the width as needed */
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #6c757d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#fillform form {
+  display: flex;
+  flex-direction: column;
+}
+
+#fillform label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#fillform input, #fillform select {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#fillform input:focus, #fillform select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#submit{
+  background-color: #02393b;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#submitsuccess{
+  color: #f07167;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

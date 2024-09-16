@@ -1,0 +1,47 @@
+.services{
+    display: flex;
+    flex-direction: column;
+   
+}
+#carservice,#BikeService,#Towing{
+    height: 400px;
+    width: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #f7ede2;
+    transition: transform 2s ;
+}
+#carservice:hover{
+    transform: translateX(300px);
+}
+
+#BikeService:hover{
+    transform: translateX(800px);
+    transition: 3s;
+}
+#Towing:hover{
+    transform: translateX(300px);
+}
+
+h1:hover{
+  color:#c89f9c;
+}
+p{
+    color: #fefae0;
+    margin-left: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button{
+    background-color: #197278;
+    color: #f4acb7;
+    font-size: 1rem;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1rem;
+    box-shadow: inset;
+}
